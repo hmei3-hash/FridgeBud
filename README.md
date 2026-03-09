@@ -1,5 +1,7 @@
 # FridgeBud
 
+git push test
+
 Smart Fridge Companion that tracks food freshness and reduces waste using AI vision, sensors, and a touchscreen interface.
 
 ## Overview
