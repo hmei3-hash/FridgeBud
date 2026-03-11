@@ -1,5 +1,5 @@
-#define POT_PIN 6
-#define BTN1_PIN 5
+#define POT_PIN 5
+#define BTN1_PIN 6
 #define BTN2_PIN 2
 
 //TODO：连接txrx，共地
