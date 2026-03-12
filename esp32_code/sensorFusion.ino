@@ -1,4 +1,4 @@
-#define POT_PIN 5
+#define POT_PIN 3
 #define BTN1_PIN 6
 #define BTN2_PIN 2
 
