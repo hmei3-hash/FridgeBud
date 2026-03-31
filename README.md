@@ -24,3 +24,7 @@ The goal is to **reduce food waste, improve food organization, and simplify meal
 ## System Architecture
 
 FridgeBud combines hardware, embedded systems, and AI software.
+
+## Most recent functioning ui code, test13_pq.py
+
+## Features and installation example in pic directory
