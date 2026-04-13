@@ -1,4 +1,4 @@
-# FridgeBud
+# 🧊 FridgeBud
 
 A smart fridge companion that tracks food freshness and reduces waste using AI vision, barcode scanning, sensors, and a pixel-art touchscreen interface.
 
@@ -109,4 +109,4 @@ Setup and demo photos are available in `docs/pic/` (step1.JPG – step5.JPG).
 
 ## License
 
-This project is for educational and personal use.
+This project is licensed under the [MIT License](LICENSE).
