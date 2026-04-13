@@ -1,4 +1,4 @@
-# 🧊 FridgeBud
+# FridgeBud
 
 A smart fridge companion that tracks food freshness and reduces waste using AI vision, barcode scanning, sensors, and a pixel-art touchscreen interface.
 
