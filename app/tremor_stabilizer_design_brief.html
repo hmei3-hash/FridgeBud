@@ -1,0 +1,135 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.wrap { padding: 1rem 0; font-family: var(--font-sans); }
+.section { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 18px 20px; margin-bottom: 10px; }
+.section-label { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 14px; }
+.field { margin-bottom: 16px; }
+.field:last-child { margin-bottom: 0; }
+.field-label { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+.field-value { font-size: 14px; color: var(--color-text-primary); line-height: 1.6; background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 12px; border: 0.5px solid var(--color-border-tertiary); }
+.highlight { background: var(--color-background-info); color: var(--color-text-info); border-color: var(--color-border-info); }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.tag { font-size: 11px; padding: 2px 9px; border-radius: var(--border-radius-md); background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 14px 0; }
+.copy-btn { margin-top: 10px; width: 100%; padding: 9px; font-size: 13px; font-weight: 500; cursor: pointer; border-radius: var(--border-radius-md); background: transparent; color: var(--color-text-primary); border: 0.5px solid var(--color-border-secondary); transition: background .15s; }
+.copy-btn:hover { background: var(--color-background-secondary); }
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">Hand Tremor Stabilizer — design brief</h2>
+
+<div class="section">
+  <div class="section-label">Project info</div>
+  <div class="row2">
+    <div class="field">
+      <div class="field-label">Design name</div>
+      <div class="field-value">Hand Tremor Stabilizer</div>
+    </div>
+    <div class="field">
+      <div class="field-label">Competition</div>
+      <div class="field-value">ASME × WOOF3D CADathon 2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Need</div>
+
+  <div class="field">
+    <div class="field-label">Who is the user and what problem do they face?</div>
+    <div class="field-value">Elderly individuals and people with motor control disorders (e.g. Parkinson's disease, essential tremor) experience involuntary hand shaking that prevents them from performing everyday precision tasks — writing, drawing, eating, and basic grip-dependent activities. As tremor severity increases, many lose independence in tasks they could previously perform without assistance.</div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">Core need statement</div>
+    <div class="field-value highlight">People with hand tremors need a lightweight, body-attached mechanical stabilizer that dampens involuntary shaking while preserving intentional movement, so they can regain independence in precision tasks like writing, drawing, and daily living activities.</div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">Constraints</div>
+    <div class="field-value">
+      <div>Materials must be soft / skin-safe where in contact with the body (TPU padding, fabric straps)</div>
+      <div style="margin-top:6px">Must attach securely to the wrist/hand without restricting blood flow</div>
+      <div style="margin-top:6px">Low total weight — target under 300 g to avoid fatigue</div>
+      <div style="margin-top:6px">No sharp external edges; all load-bearing parts enclosed or guarded</div>
+      <div style="margin-top:6px">Should be adjustable to fit a range of wrist sizes</div>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Soft-contact materials</span>
+      <span class="tag">Body-attached</span>
+      <span class="tag">Low weight</span>
+      <span class="tag">Safety-first</span>
+      <span class="tag">Adjustable fit</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Design Purpose</div>
+
+  <div class="field">
+    <div class="field-label">Design goal — what it must achieve</div>
+    <div class="field-value">Design a wrist-mounted mechanical stabilizer that uses counterweights or a gyroscopic gimbal mechanism to passively dampen high-frequency involuntary tremors, while allowing full intentional range of motion. The device must include an adjustable sensitivity mechanism so the user can tune the damping threshold to their tremor severity.</div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">Success criteria — how completion is measured</div>
+    <div class="field-value">
+      <div>1. The stabilization mechanism visibly reduces simulated tremor motion in CAD animation</div>
+      <div style="margin-top:6px">2. No uncontrolled moving parts that could cause pinching, catching, or injury during normal use</div>
+      <div style="margin-top:6px">3. A new user can understand how to don and use the device within a short learning period (intuitive attachment mechanism)</div>
+      <div style="margin-top:6px">4. The model demonstrates full range of intentional wrist motion is preserved</div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">Core design intent — why this approach</div>
+    <div class="field-value">Millions of elderly people progressively lose the ability to write, draw, or perform grip-dependent tasks as tremor worsens. A purely mechanical, passive gyroscopic solution requires no batteries, no software, and no calibration — making it highly accessible and low-maintenance for the target population. Secondary applications include surgical instrument stabilization and fine-craft use. The passive mechanism also means the device cannot malfunction electronically, improving long-term safety and reliability.</div>
+  </div>
+</div>
+
+<button class="copy-btn" onclick="copyBrief()">Copy full brief as text ↗</button>
+</div>
+
+<script>
+function copyBrief() {
+  const text = `HAND TREMOR STABILIZER — DESIGN BRIEF
+ASME × WOOF3D CADathon 2026
+
+--- NEED ---
+
+Who / Problem:
+Elderly individuals and people with motor control disorders (e.g. Parkinson's disease, essential tremor) experience involuntary hand shaking that prevents them from performing everyday precision tasks — writing, drawing, eating, and basic grip-dependent activities. As tremor severity increases, many lose independence in tasks they could previously perform without assistance.
+
+Core Need:
+People with hand tremors need a lightweight, body-attached mechanical stabilizer that dampens involuntary shaking while preserving intentional movement, so they can regain independence in precision tasks like writing, drawing, and daily living activities.
+
+Constraints:
+- Materials must be soft / skin-safe where in contact with the body (TPU padding, fabric straps)
+- Must attach securely to the wrist/hand without restricting blood flow
+- Low total weight — target under 300 g
+- No sharp external edges; all load-bearing parts enclosed or guarded
+- Adjustable to fit a range of wrist sizes
+
+--- DESIGN PURPOSE ---
+
+Design Goal:
+Design a wrist-mounted mechanical stabilizer that uses counterweights or a gyroscopic gimbal mechanism to passively dampen high-frequency involuntary tremors, while allowing full intentional range of motion. Includes adjustable sensitivity mechanism.
+
+Success Criteria:
+1. Stabilization mechanism visibly reduces simulated tremor motion in CAD animation
+2. No uncontrolled moving parts that could cause injury during normal use
+3. Intuitive don/doff and adjustment — learnable quickly by target user
+4. Full intentional wrist range of motion preserved
+
+Core Design Intent:
+Purely mechanical, passive gyroscopic solution — no batteries, no software, no calibration. Highly accessible and low-maintenance for elderly users. Secondary applications: surgical stabilization, fine-craft use. No electronic failure modes.`;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy full brief as text ↗', 2000);
+  });
+}
+</script>
